@@ -7,7 +7,7 @@
 
     <form action = '/story'>
         {% for prompt in prompts%}
-            <label for = '{{prompt}}'>{{prompt}}</label>
+            <label for = '{{prompt}}'>{{prompt.replace('_', ' ')}}</label>
             <input type = 'text' name = '{{prompt}}' placeholder = "Input {{prompt}}"> 
             <br><br>
         {% endfor %}
